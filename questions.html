@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <!-- Tailwind -->
+    <script src="tailwindcss.js"></script>
+    <!-- DeisyUI -->
+    <link rel="stylesheet" href="deisyUI.min.css">
+    <script src="deisyUI.js"></script>
+</head>
+
+<body class="bg-gray-200 p-2">
+    <header class="mb-3">
+        <div class="container mx-auto ">
+            <nav>
+                <div class="navbar rounded-xl px-6 bg-[#ffffff]">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3">
+                            <img class="w-12 h-12" src="assets/logo.png" alt="">
+                            <a class="text-2xl text-[#00303C]">Dev<span class="font-bold">Board</span></a>
+                        </div>
+                    </div>
+                    <div class="flex-none gap-5 items-center">
+                        <button id="board" class="btn btn-primary">Back DevBoard</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto">
+            <h2 class="text-4xl text-center font-bold">Blog</h2>
+            <div class="bg-white p-2 rounded-md mt-2">
+                <h3 class="text-3xl font-bold">
+                    Question-1: What are the different ways to select an element in the DOM?
+                </h3>
+                <p>Answer: DOM বিভিন্ন ধরনের selecting উপাদান রয়েছে <br>
+                    Example: <br>
+                    1. getElementById() <br>
+                    2. getElementByClassName() <br>
+                    ext.
+
+                </p>
+            </div>
+            <div class="bg-white p-2 rounded-md mt-2">
+                <h3 class="text-3xl font-bold">
+                    Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h3>
+                <p>Answer: <br>
+                    innerHTML প্রোপার্টি দিয়ে HTML এর (যেমন div বা p ইত্যাদি) ভিতরের সব contant নিয়ে আসা যায়<br>
+                    innerText প্রোপার্টি দিয়ে কোনো Element ভিতরের লেখা পরিবর্তন করতে ব্যবহার হয়<br>
+                    textContent > text কনটেন্ট রিটার্ন করতে ব্যবহার হয়
+
+                </p>
+            </div>
+            <div class="bg-white p-2 rounded-md mt-2">
+                <h3 class="text-3xl font-bold">
+                    Question-3: What is event delegation in the DOM?
+                </h3>
+                <p>Answer: <br>
+                    event delegation হলো এমন একটি কৌশল, যেখানে কোনো event listener একাধিক child এলিমেন্টের সাথে সংযুক্ত
+                    করার পরিবর্তে, প্যারেন্ট এলিমেন্টের সাথে সংযুক্ত করা হয়।
+
+                </p>
+            </div>
+            <div class="bg-white p-2 rounded-md mt-2">
+                <h3 class="text-3xl font-bold">
+                    Question-4: What is event bubbling in the DOM?
+                </h3>
+                <p>Answer: <br>
+                    event bubbling এর মাধ্যমে, ইভেন্টটি সবচেয়ে ভেতরের লক্ষ্য উপাদান থেকে শুরু হয়ে, তারপর পিতামাতাদের
+                    উপর ধারাবাহিকভাবে ট্রিগার হয়।
+
+                </p>
+            </div>
+            <div class="bg-white p-2 rounded-md mt-2">
+                <h3 class="text-3xl font-bold">
+                    Question-5: How do you create, add, and remove elements using JavaScript?
+                </h3>
+                <p>Answer: <br>
+                    create > document.createElement();
+                    add > appendChild();
+                    remove > remove();
+
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="back.js"></script>
+</body>
+
+</html>
